@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Phone\BitmapHelpers.cs">
+    <Files>
+      <File FileName="Phone\MainActivity.cs" Line="58" Column="4" />
+      <File FileName="Phone\Properties\AndroidManifest.xml" Line="7" Column="12" />
+      <File FileName="Phone\Resources\values\Strings.xml" Line="3" Column="39" />
+      <File FileName="Phone\BitmapHelpers.cs" Line="12" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Phone MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />
+</Properties>

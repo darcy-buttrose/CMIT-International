@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/angular-ui.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/flexslider.css" rel="stylesheet" />
+    <link href="Content/shapes-blue.css" rel="stylesheet" />
+</head>
+<body ng-app="main" ng-controller="MainCtrl" data-spy="scroll" data-target="#main-nav" data-offset="400">
+
+    <!--=== Feature Toggle ===-->
+    <div id="features" data-features='([
+         {"userName":"default","features":["main-nav","home","services","calltoaction","about","twitter","contact","contact-form","social-links","underconstruction","main-footer"]},
+         {"userName":"darcy","features":["main-nav","home","services","calltoaction","portfolio","testimonials","about","twitter","contact","contact-form","social-links","main-footer","thankyou"]}
+         ])'></div>
+
+    <!--=== PAGE PRELOADER ===-->
+    <div id="page-loader" ng-show="showLoader">
+        <h1 class='loader-logo'>CMIT International Pty Ltd</h1>
+        <span class="page-loader-gif"></span>
+    </div>
+
+    <!--=== BACKGROUND ===-->
+    <div id="backgrounds" data-backgrounds="assets/back_img_1.jpg,assets/back_img_2.jpg,assets/back_img_3.jpg"></div>
+    <div id="color-overlay"></div>
+
+    <!-- ==============================================
+        MAIN NAV
+        =============================================== -->
+    <ng-include src="'nav.html'"></ng-include>
+
+    <!-- ==============================================
+        HEADER
+        =============================================== -->
+    <ng-include src="'header.html'"></ng-include>
+
+
+    <!-- ==============================================
+        SERVICES
+        =============================================== -->
+    <ng-include src="'services.html'"></ng-include>
+
+    <!-- ==============================================
+        CALL TO ACTION
+        =============================================== -->
+    <ng-include src="'calltoaction.html'"></ng-include>
+
+    <!-- ==============================================
+        PORTFOLIO
+        =============================================== -->
+    <ng-include src="'portfolio.html'"></ng-include>
+
+    <!-- ==============================================
+        TESTIMONIALS
+        =============================================== -->
+    <ng-include src="'testimonials.html'"></ng-include>
+
+    <!-- ==============================================
+        ABOUT
+        =============================================== -->
+    <ng-include src="'about.html'"></ng-include>
+
+    <!-- ==============================================
+        TWITTER FEED
+        =============================================== -->
+    <ng-include src="'twitter.html'"></ng-include>
+
+    <!-- ==============================================
+        CONTACT
+        =============================================== -->
+    <ng-include src="'contact.html'"></ng-include>
+
+    <!-- ==============================================
+    SOCIAL LINKS
+    =============================================== -->
+    <ng-include src="'sociallinks.html'"></ng-include>
+
+    <!-- ==============================================
+    THANKYOU
+    =============================================== -->
+    <ng-include src="'thankyou.html'"></ng-include>
+
+    <!-- ==============================================
+        FOOTER
+        =============================================== -->
+    <ng-include src="'footer.html'"></ng-include>
+
+    <!-- ==============================================
+    SCRIPTS
+    =============================================== -->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.backstretch.min.js"></script>
+    <script src="Scripts/jquery.scrollTo.min.js"></script>
+    <script src="Scripts/jquery.flexslider.min.js"></script>
+    <script src="Scripts/jquery.masonry.min.js"></script>
+    <script src="Scripts/waypoints.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-ui.min.js"></script>
+    <script src="Scripts/ui-bootstrap-0.10.0.min.js"></script>
+    <script src="Scripts/twitterFetcher_v10_min.js"></script>
+    <script src="Scripts/modernizr-2.6.2.min.js"></script>
+    <script src='Scripts/jquery.fitvids.js'></script>
+
+    <script src="App/main.js"></script>
+    <script src="App/main.directives.js"></script>
+    <script src="App/main.controller.js"></script>
+    <script src="App/main.header.controller.js"></script>
+    <script src="App/main.nav.controller.js"></script>
+    <script src="App/main.about.controller.js"></script>
+    <script src="App/main.portfolio.controller.js"></script>
+    <script src="App/main.twitter.controller.js"></script>
+    <script src="App/main.testimonials.controller.js"></script>
+    <script src="App/main.contact.controller.js"></script>
+    <script src="App/main.utils.provider.js"></script>
+    <script src="App/main.features.provider.js"></script>
+    <script src="App/main.contacts.provider.js"></script>
+</body>
+
+</html>
