@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/angular-ui.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/flexslider.css" rel="stylesheet" />
+    <!--<link href="Content/shapes-blue.css" rel="stylesheet"/>-->
+</head>
+<body ng-app="main" ng-controller="MainCtrl" data-spy="scroll" data-target="#main-nav" data-offset="400">
+    <div id="features" data-features='([
+         {"userName":"default","features":["main-nav","home","about","contact","main-footer"]},
+         {"userName":"darcy","features":["main-nav","home","services","calltoaction","portfolio","testimonials","about","twitter","contact","contact-form","social-links","main-footer","thankyou"]}
+         ])'></div>
+
+    <!--=== PAGE PRELOADER ===-->
+    <div id="page-loader" ng-show="showLoader">
+        <h1 class='loader-logo'>CMIT International Pty Ltd</h1>
+        <span class="page-loader-gif"></span>
+    </div>
+
+    <!--=== BACKGROUND ===-->
+    <div id="backgrounds" data-backgrounds="assets/back_img_1.jpg,assets/back_img_2.jpg,assets/back_img_3.jpg"></div>
+    <div id="color-overlay"></div>
+
+    <section id="contact" feature="contact" class="padding-bottom bg-light" ng-controller="HeaderCtrl">
+
+        <div class="container">
+
+            <div waypoint class="section-header scrollimation fade-up">
+
+                <!--<div class="section-icon"><i class="fa fa-envelope"></i></div>-->
+
+                <h1 class="section-title">Contact</h1>
+
+                <p class="section-description lead">Visit me, write to me or call me</p>
+
+            </div><!--End section-header -->
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <!--=== Contact Form ===-->
+                    <div waypoint id="contact-form" feature="contact-form" class="scrollimation fade-right">
+
+                        <h3 class="primary">Drop me a line</h3>
+
+                        <div class="form-group">
+                            <label class="control-label" for="contact-name">Name</label>
+                            <div class="controls">
+                                <input id="contact-name" name="contactName" placeholder="Your name" class="form-control input-lg requiredField" type="text" data-error-empty="Please enter your name" ng-model="ContactName">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div><!-- End name input -->
+
+                        <div class="form-group">
+                            <label class="control-label" for="contact-mail">Email</label>
+                            <div class=" controls">
+                                <input id="contact-mail" name="email" placeholder="Your email" class="form-control input-lg requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address" ng-model="ContactEmail">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div><!-- End email input -->
+
+                        <div class="form-group">
+                            <label class="control-label" for="contact-message">Message</label>
+                            <div class="controls">
+                                <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control input-lg requiredField" rows="6" data-error-empty="Please enter your message" ng-model="ContactMessage"></textarea>
+                                <i class="fa fa-comment"></i>
+                            </div>
+                        </div><!-- End textarea -->
+
+                        <p><button class="btn btn-theme btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent" ng-click="SendMessage()"><i class="fa fa-location-arrow"></i>Send Message</button></p>
+                        <input type="hidden" name="submitted" id="submitted" value="true" />
+
+                    </div><!-- End contact-form -->
+
+                </div>
+
+                <div class="col-sm-5 col-sm-offset-1 contact-info">
+
+                    <div waypoint class="scrollimation scale-in">
+                        <h3 class="primary">Find Us</h3>
+                        <ul class="address">
+                            <li>
+                                <span><i class="fa fa-map-marker fa-fw"></i></span>21 Morritt Close<br>
+                                Rockingham, WA 6168<br />
+                                Australia
+                            </li>
+                            <li><span><i class="fa fa-phone fa-fw"></i></span>0414 662 415</li>
+                            <li><span><i class="fa fa-envelope fa-fw"></i></span><a href="mailto:darcy.buttrose@gmail.com">darcy.buttrose@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div waypoint class="scrollimation scale-in">
+                        <h3 class="primary">Business Hours</h3>
+                        <ul class="hours">
+                            <li><span>Mon - Fri : </span>5pm - 9pm</li>
+                            <li><span>Saturday : </span>9am - 2pm</li>
+                            <li><span>Sunday : </span> - </li>
+                        </ul>
+                    </div>
+
+                    <div waypoint class="map scrollimation scale-in">
+                        <img class="img-responsive" src="assets/map.png" alt="" />
+                        <a class="spot" style="top:80%; left:79%;" data-toggle="tooltip" title="Find Us on Google Maps" href="https://www.google.com.au/maps/place/21+Morritt+Close/@-32.291141,115.725248,17z/data=!3m1!4b1!4m2!3m1!1s0x2a32833088956891:0xf7ba5be0e94903c5" target="_blank"><span></span></a>
+                    </div>
+
+                </div><!-- End contact-info -->
+
+            </div><!-- End row -->
+
+        </div><!-- End container -->
+
+    </section><!-- End contact section -->
+    <!-- ==============================================
+    SCRIPTS
+    =============================================== -->
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.backstretch.min.js"></script>
+    <script src="Scripts/jquery.scrollTo.min.js"></script>
+    <script src="Scripts/jquery.flexslider.min.js"></script>
+    <script src="Scripts/jquery.masonry.min.js"></script>
+    <script src="Scripts/waypoints.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-ui.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/ui-bootstrap-0.10.0.min.js"></script>
+    <script src="Scripts/twitterFetcher_v10_min.js"></script>
+    <script src="Scripts/modernizr-2.6.2.min.js"></script>
+    <script src='Scripts/jquery.fitvids.js'></script>
+
+    <script src="App/main.js"></script>
+    <script src="App/main.directives.js"></script>
+    <script src="App/main.controller.js"></script>
+    <script src="App/main.header.controller.js"></script>
+    <script src="App/main.nav.controller.js"></script>
+    <script src="App/main.about.controller.js"></script>
+    <script src="App/main.portfolio.controller.js"></script>
+    <script src="App/main.twitter.controller.js"></script>
+    <script src="App/main.testimonials.controller.js"></script>
+    <script src="App/main.contact.controller.js"></script>
+    <script src="App/main.utils.provider.js"></script>
+    <script src="App/main.features.provider.js"></script>
+    <script src="App/main.contacts.provider.js"></script>
+</body>
+</html>

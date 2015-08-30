@@ -29,6 +29,8 @@
             templateUrl: 'twitter.html',
             controller: 'TwitterCtrl'
         });
+    }]).run(['$state',function($state) {
+        $state.transitionTo('home');
     }]);
 
     return main;

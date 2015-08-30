@@ -546,6 +546,7 @@
     <Content Include="Scripts\waypoints.min.js" />
     <Content Include="services.html" />
     <Content Include="sociallinks.html" />
+    <Content Include="test.html" />
     <Content Include="testimonials.html" />
     <Content Include="twitter.html" />
     <Content Include="Web.config">
